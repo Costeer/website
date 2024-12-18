@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+
+<svg
+   width="800px"
+   height="800px"
+   viewBox="0 0 48 48"
+   version="1.1"
+   id="svg3"
+   sodipodi:docname="keyoxide-svgrepo-com.svg"
+   inkscape:version="1.4 (e7c3feb100, 2024-10-09)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview3"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:zoom="0.34375"
+     inkscape:cx="-407.27273"
+     inkscape:cy="423.27273"
+     inkscape:window-width="1920"
+     inkscape:window-height="1080"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3" />
+  <defs
+     id="defs1">
+    <style
+       id="style1">.a{fill:none;stroke:#000000;stroke-linecap:round;stroke-linejoin:round;}.b{fill:#000000;}</style>
+  </defs>
+  <circle
+     class="a"
+     cx="23.0377"
+     cy="9.8858"
+     r="1.3631"
+     id="circle1"
+     style="fill:#1e1e2e;fill-opacity:1;stroke:#1e1e2e;stroke-opacity:1" />
+  <circle
+     class="a"
+     cx="25.1876"
+     cy="6.478"
+     r="0.9774"
+     id="circle2"
+     style="fill:#1e1e2e;fill-opacity:1;stroke:#1e1e2e;stroke-opacity:1" />
+  <circle
+     class="b"
+     cx="22.2877"
+     cy="5.1534"
+     r="0.75"
+     id="circle3"
+     style="fill:#1e1e2e;fill-opacity:1" />
+  <path
+     class="a"
+     d="M33.75,34.862l-8.4979-6.3558L33.75,22.1505a4.8507,4.8507,0,0,0,.9789-6.7894,4.7694,4.7694,0,0,0-.36-.4192A1.646,1.646,0,1,0,32.27,13.6487a4.9364,4.9364,0,0,0-1.9512-.1845A2.5937,2.5937,0,1,0,27.59,14.6436L22.0052,18.821v-.5547a4.85,4.85,0,1,0-9.701,0v20.48a4.85,4.85,0,1,0,9.701,0v-.5547L27.94,42.63a4.85,4.85,0,1,0,5.81-7.7683Z"
+     id="path3"
+     style="fill:#1e1e2e;fill-opacity:1;stroke:#1e1e2e;stroke-opacity:1" />
+</svg>
