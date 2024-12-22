@@ -8,7 +8,7 @@
     --text-light: #1e1e2e; 
     --text-link: #78c2ad;
     --underline: #375a7f;
-    --header: 'Pacifico', cursive;
+    --header: 'Poetsen One', serif;
     --body: 'Josefin Sans', sans-serif; 
 }
 
@@ -46,8 +46,11 @@ p {
     font-family: var(--body);
     font-size: 1.1rem;
     hyphens: auto;
-    line-height: 0.9rem;
-    text-indent: 1rem;
+    line-height: 1.2rem;
+}
+
+b {
+   font-family: 'Josefin Sans Italic', sans-serif;
 }
 
 small, li {
@@ -56,7 +59,10 @@ small, li {
 
 .test {
     background-color: var(--background-dark);
-    padding: 10px;
+    padding: 0.15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin: 0rem;
     border-radius: 13px;
     
  }
@@ -104,7 +110,7 @@ small, li {
 .navbar__title > a:hover, .footer__menu > a:hover, p > a, .navbar__menu > a:hover, .navbar__menu > a:focus {
     text-decoration: underline var(--underline);
     text-decoration-thickness: 2px;
-    text-underline-offset: 6px;
+    text-underline-offset: 2px;
 }
 
 /* Gifs */

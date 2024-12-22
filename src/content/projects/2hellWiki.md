@@ -1,11 +1,11 @@
 ---
-title: 'Project 1'
-description: 'A Wiki for the 101st "Hell" Battalion a Discord community for the Game Helldivers.'
+title: '505th Wiki'
+description: 'A Wiki for a Discord community for the Game Helldivers.'
 image:
     url: '/101stwikiimmage.png'
     alt: 'GitHub wallpaper'
 worksImage1:
-    url: '/image-1.webp'
+    url: '/505thWiki/1.png'
     alt: 'first image of your project.'
 worksImage2:
     url: '/image-2.webp'

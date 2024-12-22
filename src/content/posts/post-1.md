@@ -1,22 +1,47 @@
 ---
-title: 'Post 1'
-author: Tristen Tomczak
-date: '09-09-2024'
+title: 'How to "Steal" stickers from steam and make them into gifs'
+author: Costeer
+date: '22-12-2024'
 image:
-    url: '/blog-post.webp'
+    url: '/steamGifsInDiscord.png'
     alt: 'Post Thumbnail'
 ---
 
-Aenean a ex et metus finibus malesuada commodo in magna. In ut libero urna. Aenean in quam in ipsum rutrum egestas. Donec semper dignissim ante. Sed efficitur mi et sapien ultrices malesuada. Aliquam fermentum aliquam ante, eu semper mi vestibulum quis. Sed et purus metus. Pellentesque vestibulum commodo euismod. Duis a mauris accumsan lorem laoreet tempor. Mauris accumsan varius metus, in rutrum magna accumsan eget. Pellentesque at leo at sem tempor hendrerit non sit amet ante. Cras commodo augue sed magna rutrum rutrum.
+<p> Using Steam stickers in Discord is sadly not as easy as just coping the link to the gif and pasting it into discord but Follow these steps to make it work </p>
+
+<p> 1. Open the <a href="https://store.steampowered.com/points/shop/c/stickers">Steam Points Shop</a> in your browser or Navigate to a conversation containing the sticker you want to use</p>
+<p> 2. Right-click the sticker image </p> 
+<p> 3. Select"Copy image link" from the context menu. </p>
+<p> 4. Go to a <a href="https://ezgif.com/maker">ezgif</a> </p>
+<p> 5. Paste the copied image link into the input field on ezgif and press the Enter key </p>
 
 <div class="center">
-  <img class="pro-img" width="500px" height="281" src="/image-1.webp" alt="First Image" />
+  <img class="pro-img" width="500px" src="/steam-gifs-in-discord/1.png" alt=":3" />
 </div>
 
-Vivamus sed faucibus lorem. Aenean a lorem convallis, ultrices nisl vitae, imperdiet elit. Duis in tristique lacus. Quisque sollicitudin dolor ac dui faucibus, ut tincidunt velit blandit. Donec tincidunt metus eros, at dignissim enim blandit ut. Cras varius tincidunt tortor ac tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a ipsum quis nulla commodo pretium. Ut sed sem bibendum, facilisis dolor sit amet, interdum nibh. Aliquam id auctor dolor. In nulla diam, mattis quis nisl et, aliquam interdum quam. Donec lobortis ex arcu, ac pharetra ante vehicula euismod. Donec finibus faucibus felis vitae facilisis.
+<p> You'll see a preview of the sticker or image frames. (the immages shown will vary based on what sticker you want to copy) </p>
 
 <div class="center">
-  <img class="pro-img" width="500px" height="281" src="/image-2.webp" alt="Second Image" />
+  <img class="pro-img" width="500px" src="/steam-gifs-in-discord/2.png" alt=":3" />
 </div>
 
-Vivamus sed faucibus lorem. Aenean a lorem convallis, ultrices nisl vitae, imperdiet elit. Duis in tristique lacus. Quisque sollicitudin dolor ac dui faucibus, ut tincidunt velit blandit. Donec tincidunt metus eros, at dignissim enim blandit ut. Cras varius tincidunt tortor ac tincidunt. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed a ipsum quis nulla commodo pretium. Ut sed sem bibendum, facilisis dolor sit amet, interdum nibh. Aliquam id auctor dolor. In nulla diam, mattis quis nisl et, aliquam interdum quam. Donec lobortis ex arcu, ac pharetra ante vehicula euismod. Donec finibus faucibus felis vitae facilisis.
+<p> 6. Scroll down to the effects section. </p>
+
+<div class="center">
+  <img class="pro-img" width="500px" src="/steam-gifs-in-discord/3.png" alt=":3" />
+</div>
+
+<p> 7. Enable the "Don't stack frames" option. </p>
+
+<div class="center">
+  <img class="pro-img" width="500px" src="/steam-gifs-in-discord/4.png" alt=":3" />
+</div>
+
+<p> 8. Click "Make a GIF!". </p>
+
+
+  <img class="pro-img" width="150px" src="/steam-gifs-in-discord/5.png" alt=":3" />
+
+<p> Download the resulting GIF to use in Discord. </p>
+
+<p> After pasting the downloaded gif into discord you can also favorite it using the star when hovering over the Gif </p>
