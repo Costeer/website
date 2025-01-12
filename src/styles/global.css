@@ -186,7 +186,6 @@ li {
 
 /* Gifs */
 .gif {
-    margin: 20px 0 0 0;
     text-align: center;
 }
 
@@ -347,7 +346,7 @@ li {
 }
 .btn-space:hover {
     background-color: var(--cpurple1);
-    color: black;
+    color: white;
     cursor: pointer;
     max-width: 22rem;
 }
@@ -424,6 +423,27 @@ li {
     max-width: 22rem;
 }
 
+.btn-makerworld {
+    text-align: center;
+    background-color: #212f26;
+    border: 2px solid #212f26;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: #00ae42;
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-makerworld:hover {
+    color: #00AE42;
+    cursor: pointer;
+    max-width: 22rem;
+}
 
 .btn-git {
     text-align: center;
