@@ -1,15 +1,20 @@
 /* Global styles */
 :root {
-    --background: #1e1e2e; 
+    --background: rgb(10, 10, 10);
     --background-light: #fdebf3;
     --background-dark: #181825;
     --button: #78c2ad;
-    --text: #fdebf3;
-    --text-light: #1e1e2e; 
+    --text: #ffffff;
+    --text-light: #ffffff;
     --text-link: #78c2ad;
-    --underline: #375a7f;
-    --header: 'Poetsen One', serif;
-    --body: 'Josefin Sans', sans-serif; 
+    --underline: rgb(10, 10, 10);
+    --header: "Poetsen One", serif;
+    --body: "Josefin Sans", sans-serif;
+    --cpurple1: #7a36e3;
+    --cpurple2: #9a5ff6;
+    --purple: #9a30ff;
+    --violet: #7200ff;
+    --pink: #6844ff;
 }
 
 html {
@@ -18,19 +23,31 @@ html {
 }
 
 body {
-    max-width: 540px;
     margin: 0 auto;
     text-align: justify;
 }
 
-h1, h2 {
-    font-family: var(--header);
-    font-weight: normal;
+body {
+  display: grid;
+  height: 100vh;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.content {
+    padding-right: 25%;
+    padding-left: 17%;
+}
+
+
+headerbar {
+    width: 100%;
+    height: 100px;
 }
 
 h1 {
     font-size: 2.6rem;
-    margin: 0;
+    margin: 1rem;
     margin-bottom: 5px;
 }
 
@@ -42,35 +59,67 @@ h2 {
     margin-bottom: 0;
 }
 
+.info {
+    padding-right: 16px;
+}
+
+.who {
+    padding-top: 15rem;
+}
+
+i-am {
+    font-size: 4rem;
+    font-family: var(--body);
+}
+
+costeer {
+    padding-left: 1.2rem;
+    font-size: 4rem;
+    font-family: var(--body);
+}
+
 p {
     font-family: var(--body);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     hyphens: auto;
     line-height: 1.2rem;
 }
 
 b {
-   font-family: 'Josefin Sans Italic', sans-serif;
+    font-family: "Josefin Sans Italic", sans-serif;
 }
 
-small, li {
-    font-family: var(--body); 
+small,
+li {
+    font-family: var(--body);
 }
 
-.test {
+.pfp {
+    float: right;
+    text-align: center;
+    opacity: 12%;
+    word-wrap: break-word;
+    scale: 490%;
+    padding-left: 17%;
+    padding-top: 1.4%;
+     z-index: -1
+    
+}
+
+.textcard {
     background-color: var(--background-dark);
     padding: 0.15rem;
     padding-left: 1rem;
     padding-right: 1rem;
     margin: 0rem;
-    border-radius: 13px;
-    
- }
+    margin-top: 1.3rem;
+    border-radius: 0px;
+}
 
 .center2 {
     text-align: center;
     margin-top: 0.8rem;
-    font-family: var(--body)
+    font-family: var(--body);
 }
 
 .footer__menu {
@@ -82,9 +131,10 @@ small, li {
 
 /* Navigation Bar */
 .navbar {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    margin-top: 0.8rem;
+    padding-top: 1.2rem;
+    padding-bottom: 0.3rem;
+    padding-left: 17%;
+    padding-right: 17%;
 }
 
 .navbar__title {
@@ -92,10 +142,34 @@ small, li {
     font-size: 1.3rem;
 }
 
+.accentstrich {
+    text-align: left;
+    padding-top: 0.5rem;
+    background-color: var(--cpurple1);
+    width: 100%;
+}
+
+.costeerspace {
+    float: left;
+    padding-left: 0rem;
+    font-family: var(--body);
+    color: var(--cpurple1);
+    text-decoration: none; 
+    font-size: 1.5rem;
+}
+.costeerspace > a, p > a {
+    color: var(--cpurple2);
+    text-decoration: none; 
+}
+
 .navbar__menu {
     font-family: var(--body);
-    font-size: 1.1rem;
-    text-align: center;
+    font-size: 1.5rem;
+    text-align: right;
+    padding-right: 0rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
+    float: right;
 }
 
 .navbar__title > a, p > a, .footer__menu > a, .navbar__menu > a {
@@ -103,9 +177,6 @@ small, li {
     text-decoration: none;
 }
 
-.navbar__menu > a {
-    margin: 0 10px;
-}
 
 .navbar__title > a:hover, .footer__menu > a:hover, p > a, .navbar__menu > a:hover, .navbar__menu > a:focus {
     text-decoration: underline var(--underline);
@@ -119,6 +190,54 @@ small, li {
     text-align: center;
 }
 
+/* Animated Text */
+
+@keyframes background-pan {
+  from {
+    background-position: 0% center;
+  }
+  
+  to {
+    background-position: -200% center;
+  }
+}
+
+@keyframes scale {
+  from, to {
+    transform: scale(0);
+  }
+  
+  50% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+
+.magic > .magic-text {
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient(
+    to right,
+    var(--purple),
+    var(--violet),
+    var(--pink),
+    var(--purple)
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
 /* Badge */
 .badge {
     background-color: #584966;
@@ -126,7 +245,7 @@ small, li {
     border-radius: 6px;
     font-family: var(--body);
     font-weight: 600;
-    font-size: .85rem;
+    font-size: 0.85rem;
     padding: 0.3em 0.6em 0.2em;
 }
 
@@ -203,16 +322,174 @@ small, li {
     padding: 0;
 }
 
+.nothing {
+    color: var(--background);
+}
+
 /* Button */
+
+.btn-space {
+    text-align: center;
+    background-color: var(--background);
+    border: 3px solid var(--cpurple1);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: var(--text);
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-space:hover {
+    background-color: var(--cpurple1);
+    color: black;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+.btn-discord {
+    text-align: center;
+        background-color: #5865F2;
+    border: 2px solid #5865F2;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-discord:hover {
+    background-color: #5865F2;
+    color: white;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+.btn-key {
+    text-align: center;
+    background-color: var(--cpurple2);
+    border: 2px solid var(--cpurple2);
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-key:hover {
+    background-color: var(--cpurple2);
+    color: white;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+.btn-bluesky {
+    text-align: center;
+    background-color: #6CA0DC;
+    border: 2px solid #6CA0DC;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-bluesky:hover {
+    background-color:  #6CA0DC;
+    color: white;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+
+.btn-git {
+    text-align: center;
+        background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: var(--background);
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-git:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+.btn-git {
+    text-align: center;
+        background-color: white;
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    color: var(--background);
+    font: 600 20px var(--body);
+    padding: 10px;
+    margin: 0 auto;
+    max-width: 20rem;
+    transition:
+        background-color 0.4s,
+        max-width 0.4s,
+        color 0.4s; 
+}
+.btn-git:hover {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    max-width: 22rem;
+}
+
+.button-list {
+    margin-top: 3rem;
+}
+
+/* //////////////////////////////////////////// */
+
 .btn {
     text-align: center;
-    background: rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
     border: 2px solid var(--button);
     border-radius: 8px;
     color: var(--text);
     font: 600 16px var(--body);
     padding: 8px 16px;
-    transition: background-color 0.4s, color 0.4s;
+    transition:
+        background-color 0.4s,
+        color 0.4s;
 }
 
 .btn:hover {
@@ -236,8 +513,8 @@ small, li {
 }
 
 .centerpadding {
-   text-align: center;
-   margin-top: 1rem;
+    text-align: center;
+    margin-top: 1rem;
 }
 
 .pro-img {
@@ -270,32 +547,6 @@ footer {
     padding: 0 0.5rem;
 }
 
-.icon__link {
-    display: flex;
-    padding: 10px;
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-    border: 2px solid #fdebf3;
-}
-
-.icon__link:hover {
-    border-color: var(--text-link);
-}
-
-
-.git-icon {
-    content: url("/github-mark-white.svg");
-}
-
-.mail-icon {
-    content: url("/mail-white.svg");
-}
-
-.linked-in {
-    content: url("/li-in-white.png");
-}
-
 /* 404 */
 .lost {
     margin-top: 30%;
@@ -311,104 +562,10 @@ footer {
 }
 
 .lost__body {
-    color: #5C5B77;
+    color: #5c5b77;
 }
 
 .lost__link {
     color: var(--text-link);
     text-decoration: none;
 }
-
-/* Theme Icon */
-html.light {
-    background-color: var(--background-light);
-    color: var(--text-light);
-}
-
-.light .navbar__title > a {
-    color: var(--text-light);
-}
-
-.light .navbar__menu > a {
-    color: var(--text-light);
-}
-
-.light .card__title {
-    color: var(--text-light); 
-}
-
-.light .card__txt {
-    color: var(--text-light); 
-}
-
-.light .btn {
-    color: var(--text-light);
-}
-
-.light .btn:hover {
-    color: var(--text);
-}
-
-.light .icon__link {
-    border: 2px solid var(--text-light);
-}
-
-.light .icon__link:hover {
-    border-color: var(--text-link);
-}
-
-.light .git-icon {
-    content: url("/github-mark.svg");
-}
-
-.light .mail-icon {
-    content: url("/mail.svg");
-}
-
-.light .linked-in {
-    content: url("/li-in.png");
-}
-
-.light .badge__link {
-    color: var(--text-link);
-}
-
-/* Media Query */
-@media only screen and (max-width: 600px) {
-    body {
-        width: 350px;
-    }
-
-    .navbar {
-        display: initial;
-    }
-
-    .navbar__title {
-        text-align: center;
-    }
-
-    .navbar__menu {
-        text-align: center;
-    }
-
-    .navbar__menu > a {
-        margin: 0 11px;
-    }
-
-    .skills__img {
-        height: 30px;
-        width: 30px;
-        margin: 8px 1px;
-    }
-
-    .badge__list {
-        font-size: 0.9rem;
-        text-indent: 0;
-    }
-
-    .pro-img {
-        height: auto;
-        width: 350px;
-    }
-}
-
