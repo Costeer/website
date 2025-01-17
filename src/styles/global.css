@@ -28,17 +28,16 @@ body {
 }
 
 body {
-  display: grid;
-  height: 100vh;
-  margin: 0px;
-  overflow: hidden;
+    display: grid;
+    height: 100vh;
+    margin: 0px;
+    overflow: hidden;
 }
 
 .content {
     padding-right: 25%;
     padding-left: 17%;
 }
-
 
 headerbar {
     width: 100%;
@@ -102,8 +101,7 @@ li {
     scale: 490%;
     padding-left: 17%;
     padding-top: 1.4%;
-     z-index: -1
-    
+    z-index: -1;
 }
 
 .textcard {
@@ -154,12 +152,13 @@ li {
     padding-left: 0rem;
     font-family: var(--body);
     color: var(--cpurple1);
-    text-decoration: none; 
+    text-decoration: none;
     font-size: 1.5rem;
 }
-.costeerspace > a, p > a {
+.costeerspace > a,
+p > a {
     color: var(--cpurple2);
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .navbar__menu {
@@ -172,69 +171,76 @@ li {
     float: right;
 }
 
-.navbar__title > a, p > a, .footer__menu > a, .navbar__menu > a {
+.navbar__title > a,
+p > a,
+.footer__menu > a,
+.navbar__menu > a {
     color: var(--text);
     text-decoration: none;
 }
 
-
-.navbar__title > a:hover, .footer__menu > a:hover, p > a, .navbar__menu > a:hover, .navbar__menu > a:focus {
+.navbar__title > a:hover,
+.footer__menu > a:hover,
+p > a,
+.navbar__menu > a:hover,
+.navbar__menu > a:focus {
     text-decoration: underline var(--underline);
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
 
 /* Gifs */
-.gif {
+.vtublogo {
     text-align: center;
+    margin-top: -9rem;
 }
 
 /* Animated Text */
 
 @keyframes background-pan {
-  from {
-    background-position: 0% center;
-  }
-  
-  to {
-    background-position: -200% center;
-  }
+    from {
+        background-position: 0% center;
+    }
+
+    to {
+        background-position: -200% center;
+    }
 }
 
 @keyframes scale {
-  from, to {
-    transform: scale(0);
-  }
-  
-  50% {
-    transform: scale(1);
-  }
+    from,
+    to {
+        transform: scale(0);
+    }
+
+    50% {
+        transform: scale(1);
+    }
 }
 
 @keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  
-  to {
-    transform: rotate(180deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
-
 .magic > .magic-text {
-  animation: background-pan 3s linear infinite;
-  background: linear-gradient(
-    to right,
-    var(--purple),
-    var(--violet),
-    var(--pink),
-    var(--purple)
-  );
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  white-space: nowrap;
+    animation: background-pan 3s linear infinite;
+    background: linear-gradient(
+        to right,
+        var(--purple),
+        var(--violet),
+        var(--pink),
+        var(--purple)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    white-space: nowrap;
 }
 
 /* Badge */
@@ -342,7 +348,7 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-space:hover {
     background-color: var(--cpurple1);
@@ -353,8 +359,8 @@ li {
 
 .btn-discord {
     text-align: center;
-        background-color: #5865F2;
-    border: 2px solid #5865F2;
+    background-color: #5865f2;
+    border: 2px solid #5865f2;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -366,10 +372,10 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-discord:hover {
-    background-color: #5865F2;
+    background-color: #5865f2;
     color: white;
     cursor: pointer;
     max-width: 22rem;
@@ -390,7 +396,7 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-key:hover {
     background-color: var(--cpurple2);
@@ -401,8 +407,8 @@ li {
 
 .btn-bluesky {
     text-align: center;
-    background-color: #6CA0DC;
-    border: 2px solid #6CA0DC;
+    background-color: #6ca0dc;
+    border: 2px solid #6ca0dc;
     border-radius: 8px;
     display: flex;
     justify-content: center;
@@ -414,10 +420,10 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-bluesky:hover {
-    background-color:  #6CA0DC;
+    background-color: #6ca0dc;
     color: white;
     cursor: pointer;
     max-width: 22rem;
@@ -437,17 +443,17 @@ li {
     max-width: 20rem;
     transition:
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-makerworld:hover {
-    color: #00AE42;
+    color: #00ae42;
     cursor: pointer;
     max-width: 22rem;
 }
 
 .btn-git {
     text-align: center;
-        background-color: white;
+    background-color: white;
     border: 2px solid #ffffff;
     border-radius: 8px;
     display: flex;
@@ -460,7 +466,7 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-git:hover {
     background-color: white;
@@ -471,7 +477,7 @@ li {
 
 .btn-git {
     text-align: center;
-        background-color: white;
+    background-color: white;
     border: 2px solid #ffffff;
     border-radius: 8px;
     display: flex;
@@ -484,7 +490,7 @@ li {
     transition:
         background-color 0.4s,
         max-width 0.4s,
-        color 0.4s; 
+        color 0.4s;
 }
 .btn-git:hover {
     background-color: white;
