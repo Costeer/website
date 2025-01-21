@@ -8,8 +8,9 @@ Just me having fun with astro
 
 The stie is build with Astro and my first project using it, the site is compleatly JS free
 
-this site is based on [this template](https://github.com/ttomczak3/Milky-Way) mady by [Tristen Tomczakhttps](https://github.com/ttomczak3).
-The website is heavily modified and doesn't resemble the template at all but it helped me understand how Astro works
+I started with [this template](https://github.com/ttomczak3/Milky-Way) as a base, its made by [Tristen Tomczakhttps](https://github.com/ttomczak3).
+I heavily modified it and doesn't resemble the template at all but it helped me a lot to already have a working base and to modify it to my needs
+instead of having to make everything from scratch :3
 
 ### Gallery
 *last update 2025-01-21*
