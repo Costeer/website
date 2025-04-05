@@ -1,8 +1,7 @@
 /* Global styles */
 :root {
-    --background: rgb(10, 10, 10);
     --background-light: #fdebf3;
-    --background-dark: #181825;
+    --background-dark: #1e1e2e;
     --button: #78c2ad;
     --text: #ffffff;
     --text-light: #ffffff;
@@ -18,7 +17,7 @@
 }
 
 html {
-    background-color: var(--background);
+    background: #1e1e2e;
     color: var(--text);
 }
 
@@ -37,6 +36,47 @@ body {
 .content {
     padding-right: 25%;
     padding-left: 17%;
+}
+
+.test {
+    margin-top: -80px;
+}
+
+.grain {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    pointer-event: none;
+    z-index: -1;
+    transform: translateZ(0);
+
+    &:before {
+        content: "";
+        top: -10rem;
+        left: -10rem;
+        width: calc(100% + 20rem);
+        height: calc(100% + 20rem);
+        z-index: 9999;
+        position: fixed;
+        background-image: url(https://upload.wikimedia.org/wikipedia/commons/5/5c/Image_gaussian_noise_example.png);
+        opacity: 0.1;
+        pointer-events: none;
+        -webkit-animation: noise 1s steps(2) infinite;
+        animation: noise 1s steps(2) infinite;
+    }
+}
+
+.darken {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 headerbar {
@@ -63,7 +103,7 @@ h2 {
 }
 
 .who {
-    padding-top: 15rem;
+    padding-top: 1rem;
 }
 
 i-am {
@@ -71,10 +111,22 @@ i-am {
     font-family: var(--body);
 }
 
-costeer {
-    padding-left: 1.2rem;
-    font-size: 4rem;
+.costeer {
+    font-size: 3rem;
+    padding-left: 13px;
     font-family: var(--body);
+    z-index: 1;
+}
+
+.starybg {
+    float: right;
+    text-align: center;
+    opacity: 20%;
+    word-wrap: break-word;
+    scale: 490%;
+    padding-left: 17%;
+    padding-top: 1.4%;
+    z-index: -2;
 }
 
 p {
@@ -96,12 +148,12 @@ li {
 .pfp {
     float: right;
     text-align: center;
-    opacity: 12%;
+    opacity: 20%;
     word-wrap: break-word;
     scale: 490%;
     padding-left: 17%;
     padding-top: 1.4%;
-    z-index: -1;
+    z-index: -2;
 }
 
 .textcard {
@@ -148,12 +200,12 @@ li {
 }
 
 .costeerspace {
-    float: left;
     padding-left: 0rem;
     font-family: var(--body);
     color: var(--cpurple1);
     text-decoration: none;
     font-size: 1.5rem;
+    float: left;
 }
 .costeerspace > a,
 p > a {
@@ -167,7 +219,7 @@ p > a {
     text-align: right;
     padding-right: 0rem;
     padding-top: 0rem;
-    padding-bottom: 1rem;
+    padding-bottom: 0rem;
     float: right;
 }
 
@@ -184,7 +236,7 @@ p > a,
 p > a,
 .navbar__menu > a:hover,
 .navbar__menu > a:focus {
-    text-decoration: underline var(--underline);
+    text-decoration: underline transparent;
     text-decoration-thickness: 2px;
     text-underline-offset: 2px;
 }
